@@ -1,6 +1,7 @@
 ### Site Settings ###
 title               : harris的个人站
-description         : >-哈基林，你这家伙！
+description         : >-
+                      哈基林，你这家伙！
                       I turn coffee :coffee: into code,
                       use tabs over spaces
                       and never broke production.
@@ -30,13 +31,13 @@ author:
   behance           : your_username
 # dribbble          : your_username
   email             : 3298536343@qq.com
-  facebook          : your_username
+# facebook          : your_username
   github            : harris0310
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
-  linkedin          : your_username
-  medium            : your_username
+# linkedin          : your_username
+# medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
 # stackoverflow     : your_user_id
@@ -81,6 +82,7 @@ buymeacoffee:
   message: "Thank you for visiting."                    # Message to be displayed aside from the button for a few seconds.
   description: "Support me on Buy me a coffee!"
 
+skin:
 
 ### Defaults for collections ###
 defaults:
