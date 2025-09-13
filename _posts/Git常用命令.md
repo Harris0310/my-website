@@ -1,0 +1,147 @@
+# 一下是搜集的常用命令
+<!-- 我自己的丝滑提交小连招 -->
+git add .
+git commit -m "update"
+git push -f origin main
+
+<!-- Git 工作流示意图 -->
+工作区 → git add → 暂存区 → git commit → 本地仓库 → git push → 远程仓库
+
+以下为常用命令:
+<!-- 1. 基础配置 -->
+# 设置全局用户名和邮箱（提交时显示作者信息）
+git config --global user.name "你的用户名"
+git config --global user.email "你的邮箱"
+
+# 查看所有配置
+git config --list
+
+# 设置 Git 默认编辑器为 VS Code
+git config --global core.editor "code --wait"
+
+<!-- 2. 仓库初始化与克隆 -->
+# 初始化本地仓库
+git init
+
+# 克隆远程仓库（HTTPS 或 SSH）
+git clone https://github.com/用户名/仓库名.git
+git clone git@github.com:用户名/仓库名.git
+
+# 克隆指定分支
+git clone -b 分支名 仓库地址
+
+<!-- 3. 提交与推送 -->
+# 查看文件状态
+git status
+
+# 添加所有修改到暂存区
+git add .
+
+# 添加指定文件
+git add 文件名
+
+# 提交到本地仓库（提交描述）
+git commit -m ""
+
+# 推送到远程分支（首次推送加 -u）
+git push -u 本地分支 分支名
+
+# 强制推送（谨慎使用）
+git push -f 本地分支 分支名
+
+<!-- 4. 分支操作 -->
+# 查看所有分支（本地+远程）
+git branch -a
+
+# 创建新分支
+git branch 分支名
+
+# 切换分支
+git checkout 分支名
+
+# 创建并切换分支
+git checkout -b 新分支名
+
+# 删除本地分支
+git branch -d 分支名
+
+# 删除远程分支
+git push origin --delete 分支名
+
+# 合并分支到当前分支
+git merge 分支名
+
+<!-- 5. 远程仓库管理 -->
+# 查看远程仓库地址
+git remote -v
+
+# 添加远程仓库
+git remote add origin 仓库地址
+
+# 修改远程仓库地址
+git remote set-url origin 新地址
+
+# 拉取远程分支最新代码
+git pull origin 分支名
+
+# 拉取并强制覆盖本地（谨慎！）
+git fetch --all
+git reset --hard origin/分支名
+
+<!-- 6. 撤销与回退 -->
+# 撤销工作区修改（未 add）
+git checkout -- 文件名
+
+# 撤销暂存区修改（已 add）
+git reset HEAD 文件名
+
+# 回退到某次提交（保留修改）
+git reset --soft 提交ID
+
+# 彻底回退到某次提交（丢弃修改）
+git reset --hard 提交ID
+
+# 生成撤销某次提交的新提交
+git revert 提交ID
+
+<!-- 7. 日志与差异 -->
+# 查看提交历史
+git log
+
+# 简洁版提交历史
+git log --oneline
+
+# 查看文件修改内容
+git diff
+
+# 查看某次提交的改动
+git show 提交ID
+
+<!-- 8. 忽略文件（.gitignore） -->
+# 忽略所有 .log 文件
+*.log
+
+# 忽略文件夹
+node_modules/
+.idea/
+__pycache__/
+
+<!-- 9. 临时保存更改（Stash） -->
+# 保存当前修改到临时栈
+git stash
+
+# 恢复最近保存的修改
+git stash pop
+
+# 查看所有暂存记录
+git stash list
+
+<!-- 10. 标签管理 -->
+# 创建标签
+git tag v1.0.0
+
+# 推送标签到远程
+git push origin v1.0.0
+
+# 删除标签
+git tag -d v1.0.0
