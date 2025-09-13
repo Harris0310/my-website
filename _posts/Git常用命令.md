@@ -1,4 +1,8 @@
-# 一下是搜集的常用命令
+title: Git 常用命令大全
+date: 2025-09-13
+tags: [Git, 开发工具, 版本控制]
+
+# 以下是搜集的常用命令
 <!-- 我自己的丝滑提交小连招 -->
 git add .
 git commit -m "update"
