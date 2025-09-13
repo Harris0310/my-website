@@ -1,8 +1,10 @@
-title: Git 常用命令大全
-date: 2025-09-13
-tags: [Git, 开发工具, 版本控制]
-
-# 以下是搜集的常用命令
+ ---
+ title: Git常用命令
+ tags: [Git, 版本控制, 开发工具]
+ style: fill
+ color: primary
+ description: 网上搜集的git常用命令
+ ---
 <!-- 我自己的丝滑提交小连招 -->
 git add .
 git commit -m "update"

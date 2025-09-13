@@ -31,9 +31,9 @@ nav_exclude:
   - pages/tags.html
   - pages/404.html
   - pages/index.md
-  - pages/elements.html      # 是 .html 不是 .md
-  - pages/documentation.html # 同上
-  - documentation/partials/**                          # For Documentation Only
+  - name: 博客
+    link: /blog/
+  - name: 关于
 
 
 ### Author Info ###
@@ -70,7 +70,7 @@ collections:
     output: true
     permalink: /projects/:name
   elements:                                             # For Documentation Only
-    output: true                                        # For Documentation Only
+    output: false                                        # For Documentation Only
 
 
 ### Disqus ###
