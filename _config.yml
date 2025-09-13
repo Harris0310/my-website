@@ -100,7 +100,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      comments: false                                   # Set to true to enable disqus comments
+      comments: false                                   # Set to true to enable disqus comments on posts
 
 
 ### Exclude from processing ###
@@ -108,4 +108,7 @@ exclude:
   - README.md
   - CONTRIBUTING.md
   - LICENSE
+  - pages/elements.md
+  - pages/documentation.md
+  - documentation/partials/**
   - "*.log"
