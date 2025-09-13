@@ -15,17 +15,6 @@ open_new_tab        : false                    # Opens external URLs in new tab 
 plugins:
   - jemoji
 
-### 导航栏中文 ###
-nav:
-  - name: 首页
-    link: /
-  - name: 项目
-    link: /projects/
-  - name: 博客
-    link: /blog/
-  - name: 关于
-    link: /about/
-
 ### Navbar Settings ###
 nav_exclude:
   - pages/tags.html
@@ -44,7 +33,7 @@ author:
 # dribbble          : your_username
   email             : 3298536343@qq.com
 # facebook          : your_username
-  github            : https://github.com/Harris0310/my-website.git
+  github            : https://github.com/Harris0310/
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
