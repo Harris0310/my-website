@@ -25,13 +25,12 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: true   # 自动 bundle install
+          bundler-cache: true          # 根据你仓库 Gemfile 安装
 
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
+      - name: Install & Build
+        run: |
+          bundle install
+          bundle exec jekyll build --baseurl /my-website --destination ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
