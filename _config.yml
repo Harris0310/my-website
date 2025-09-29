@@ -1,8 +1,7 @@
 ### Site Settings ###
 title               : CY的个人站
 description         : >-
-                      哈基林，你这家伙！
-                      此时不学，更待何时！
+                      Hello World!
 baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : harris0310/harris0310.github.io      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : yousinix/portfolYOU
@@ -29,7 +28,7 @@ author:
   image             : assets/images/yunxiao.jpg
   behance           : your_username
 # dribbble          : your_username
-  email             : 3298536343@qq.com
+  email             : acy2100@outlook.com
 # facebook          : your_username
   github            : Harris0310
 # gitlab            : your_username
