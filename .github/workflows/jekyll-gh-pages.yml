@@ -1,8 +1,9 @@
-name: Build & Deploy to GitHub Pages
+name: Build & Deploy portfolYOU to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -23,8 +24,8 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'        # 与官方 Gemfile 一致
-          bundler-cache: true         # 自动 bundle install
+          ruby-version: '3.2'
+          bundler-cache: true   # 自动 bundle install
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
@@ -34,6 +35,8 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
 
   deploy:
     environment:
