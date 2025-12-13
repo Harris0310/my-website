@@ -1,4 +1,5 @@
 ### Site Settings ###
+encoding: utf-8
 title               : CY的个人站
 description         : >-
                       Hello World!
